@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Login</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-image:url('images/admin.jpg');
+        background-size:cover;
+    }
+    form {
+        border: 1px solid #ddd;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        background: rgba(255, 255, 255, 0.9);
+    }
+    h1 {
+        color:white;;
+        margin-left:center;
+        margin-bottom: 250px;
+        
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+    }
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white; 
+        font-size: 16px;
+        cursor: pointer;
+       
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    
+    </style>
+</head>
+<body>
+<h1>Enter Admin Details</h1><br>
+<form action="login" method="post">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter valid email..." required /><br>
+
+    <label for="pass">Password:</label>
+    <input type="password" id="pass" name="pass" placeholder="Enter password..." required /><br><br>
+
+    <input type="submit" value="Login" />
+</form>
+</body>
+</html>
